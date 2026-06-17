@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Navbar from "@/components/ui/Navbar";
-import Footer from "@/components/ui/Footer";
-import ChatWidget from "@/components/chat/ChatWidget";
+import SiteChrome from "@/components/ui/SiteChrome";
 import { BRAND } from "@/lib/constants";
 
 export const metadata: Metadata = {
@@ -67,10 +65,7 @@ export default function RootLayout({
         />
       </head>
       <body>
-        <Navbar />
-        <main>{children}</main>
-        <Footer />
-        <ChatWidget />
+        <SiteChrome>{children}</SiteChrome>
       </body>
     </html>
   );
