@@ -1,11 +1,11 @@
-import { supabase } from "@/lib/supabase";
+import { getSupabaseAdmin } from "@/lib/supabase";
 import type { Booking } from "@/lib/supabase";
 
 export async function POST(req: Request) {
   try {
     const body: Booking = await req.json();
 
-    const { data, error } = await supabase
+    const { data, error } = await getSupabaseAdmin()
       .from("bookings")
       .insert([{ ...body, status: "pending" }])
       .select()
@@ -24,7 +24,7 @@ export async function POST(req: Request) {
 }
 
 export async function GET() {
-  const { data, error } = await supabase
+  const { data, error } = await getSupabaseAdmin()
     .from("bookings")
     .select("*")
     .order("created_at", { ascending: false });
