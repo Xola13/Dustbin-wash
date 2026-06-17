@@ -10,9 +10,12 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
           {/* Brand */}
           <div className="md:col-span-2">
-            <h3 className="font-heading font-bold text-xl text-white mb-2">
+            <h3 className="font-heading font-bold text-xl text-white mb-0.5">
               {BRAND.name}
             </h3>
+            <p className="text-white/30 text-xs tracking-widest uppercase mb-3">
+              by {BRAND.parent}
+            </p>
             <p className="text-white/50 text-sm max-w-xs leading-relaxed mb-4">
               Cape Town&apos;s premium wheelie bin washing and sanitizing service.
               Eco-certified. Fully insured. No mess.

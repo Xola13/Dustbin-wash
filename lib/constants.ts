@@ -2,15 +2,17 @@
 // Edit this file to update brand details, service areas, and pricing.
 
 export const BRAND = {
-  name: "Safe Solution",
+  name: "BinSpa",
+  parent: "Safe Solution",
+  fullName: "BinSpa by Safe Solution",
   tagline: "Your Bin, Brilliantly Clean.",
   subtagline: "No more wincing when you lift the lid.",
   phone: "[EDIT ME: +27 XX XXX XXXX]",
-  email: "[EDIT ME: hello@safesolution.co.za]",
+  email: "[EDIT ME: hello@binspa.co.za]",
   whatsapp: "[EDIT ME: 27XXXXXXXXXX]", // digits only, no +
   address: "[EDIT ME: Cape Town, Western Cape, South Africa]",
-  instagram: "[EDIT ME: @safesolution_ct]",
-  facebook: "[EDIT ME: SafeSolutionCT]",
+  instagram: "[EDIT ME: @binspa_ct]",
+  facebook: "[EDIT ME: BinSpaCT]",
 };
 
 export const SERVICE_SUBURBS = [
@@ -190,7 +192,7 @@ export const FAQS = [
 ];
 
 // System prompt for the AI assistant — update this to reflect real details
-export const AI_SYSTEM_PROMPT = `You are the friendly, knowledgeable AI assistant for Safe Solution — Cape Town's premium wheelie bin washing and sanitizing service.
+export const AI_SYSTEM_PROMPT = `You are the friendly, knowledgeable AI assistant for BinSpa by Safe Solution — Cape Town's premium wheelie bin washing and sanitizing service.
 
 Brand voice: Warm, confident, slightly playful, never robotic. Think helpful neighbour who happens to be a hygiene expert.
 

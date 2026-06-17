@@ -34,12 +34,15 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2.5 group">
             <BinLogo />
-            <span
-              className="font-heading font-bold text-lg text-white tracking-tight
-                         group-hover:text-aqua-400 transition-colors duration-200"
-            >
-              {BRAND.name}
-            </span>
+            <div className="flex flex-col leading-tight">
+              <span className="font-heading font-bold text-lg text-white tracking-tight
+                               group-hover:text-aqua-400 transition-colors duration-200">
+                {BRAND.name}
+              </span>
+              <span className="text-white/40 text-[10px] tracking-widest uppercase font-medium">
+                by {BRAND.parent}
+              </span>
+            </div>
           </Link>
 
           {/* Desktop links */}

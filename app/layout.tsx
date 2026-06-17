@@ -7,22 +7,23 @@ import { BRAND } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: {
-    default: `${BRAND.name} | Premium Bin Washing Cape Town`,
+    default: `${BRAND.name} by ${BRAND.parent} | Premium Bin Washing Cape Town`,
     template: `%s | ${BRAND.name}`,
   },
   description:
-    "Cape Town's premium wheelie bin washing and sanitizing service. Weekly, bi-weekly, and monthly plans. Eco-certified products. No more wincing when you lift the lid.",
+    "Cape Town's premium wheelie bin washing and sanitizing service by Safe Solution. Weekly, bi-weekly, and monthly plans. Eco-certified products. No more wincing when you lift the lid.",
   keywords: [
+    "BinSpa",
     "bin washing Cape Town",
     "wheelie bin cleaning",
     "bin sanitizing",
     "bin deodorizing",
     "Cape Town cleaning service",
-    "residential bin wash",
+    "Safe Solution",
     "eco-friendly bin cleaning",
   ],
-  authors: [{ name: BRAND.name }],
-  creator: BRAND.name,
+  authors: [{ name: BRAND.fullName }],
+  creator: BRAND.parent,
   metadataBase: new URL(
     process.env.NEXT_PUBLIC_APP_URL || "http://localhost:3000"
   ),
