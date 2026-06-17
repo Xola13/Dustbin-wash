@@ -6,7 +6,7 @@ import { useState, useCallback } from "react";
 type MediaItem = { src: string; alt: string; type: "image" | "video" };
 
 const MEDIA: MediaItem[] = [
-  { src: "/gallery/WhatsApp Video 2026-06-17 at 11.12.21.mp4", alt: "Bin wash in action", type: "video" },
+  { src: "/gallery/WhatsApp Video 2026-06-17 at 11.26.20.mp4", alt: "Bin wash in action", type: "video" },
   { src: "/gallery/468303195_540150115489808_1874641589993957322_n.jpg", alt: "Bin cleaning in action", type: "image" },
   { src: "/gallery/468303226_540150235489796_7816801740283807520_n.jpg", alt: "Clean wheelie bin result", type: "image" },
   { src: "/gallery/468314698_540150172156469_5482335147486034963_n.jpg", alt: "On-site bin wash", type: "image" },
